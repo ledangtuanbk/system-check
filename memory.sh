@@ -12,6 +12,7 @@ THRESHOLD=2000
 	emails="ledangtuanbk@gmail.com"
 	title="Memory full $available/$total `hostname` `curl ipinfo.io/ip`"
 	body="Memory full "
-	$dirname/email.sh "$emails" "$title" "$body"
+	personal="ISOFH SYSTEM"
+	$dirname/email.sh "$emails" "$title" "$body" "$personal"
     else  echo "bo nho ok"
     fi
