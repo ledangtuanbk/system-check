@@ -12,9 +12,10 @@ emails="ledangtuanbk@gmail.com"
 
 title="disk full $CURRENT% `hostname` `curl ipinfo.io/ip` "
 body="disk full"
+personal="ISOFH SYSTEM"
 echo "start send email $emails $title $body"
 
-$dirname/email.sh "$emails" "$title" "$body"
+$dirname/email.sh "$emails" "$title" "$body" "$personal"
 $dirname/clean-docker.sh
 else 
 echo "not send email"
