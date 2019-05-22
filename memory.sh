@@ -1,7 +1,7 @@
 #!/bin/bash
 dirname=`dirname "$0"`
 #Minimum available memory limit, MB
-THRESHOLD=20000
+THRESHOLD=2000
 
     available=$(free -m|awk '/^Mem:/{print $7}')
     total=$(free -m|awk '/^Mem:/{print $2}')
