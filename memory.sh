@@ -1,5 +1,5 @@
 #!/bin/bash
-dirname=`dirname "$0"`
+dirname=$(dirname $0)
 #Minimum available memory limit, MB
 THRESHOLD=2000
 
@@ -10,7 +10,7 @@ THRESHOLD=2000
         then
 	echo "bo nho thieu"
 	emails="ledangtuanbk@gmail.com"
-	title="Memory full $available/$total `hostname` `curl ipinfo.io/ip`"
+	title="Memory full $available/$total $(hostname) $(curl ipinfo.io/ip)"
 	body="Memory full "
 	personal="ISOFH SYSTEM"
 	$dirname/email.sh "$emails" "$title" "$body" "$personal"
