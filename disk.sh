@@ -17,6 +17,7 @@ echo "start send email $emails $title $body"
 
 $dirname/email.sh "$emails" "$title" "$body" "$personal"
 $dirname/clean-docker.sh
+$dirname/clean-jenkins.sh
 else 
 echo "not send email"
 fi
